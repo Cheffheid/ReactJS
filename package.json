@@ -7,6 +7,12 @@
     "build": "NODE_ENV='production' && webpack",
     "start": "webpack-dev-server"
   },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Cheffheid/ReactJS.git"
@@ -18,9 +24,13 @@
   },
   "homepage": "https://github.com/Cheffheid/ReactJS#readme",
   "dependencies": {
-    "react": "^16.12.0"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
     "html-webpack-plugin": "^3.2.0",
