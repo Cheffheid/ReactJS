@@ -5,9 +5,9 @@ import './index.css';
 class App extends React.Component {
 	render() {
 		return (
-			<div>
-				Hello World!
-			</div>
+			<React.Fragment>
+				<h1>Hello World!</h1>
+			</React.Fragment>
 		)
 	}
 }
