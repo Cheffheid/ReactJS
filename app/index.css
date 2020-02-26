@@ -39,3 +39,71 @@ li {
 .nav-link.active {
 	color: rgb(187, 41, 37);
 }
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.space-around {
+	justify-content: space-around;
+}
+
+.header-lg {
+	font-size: 35px;
+	font-weight: 300;
+	margin: 20px;
+}
+
+.avatar {
+	display: block;
+	border-radius: 3px;
+	height: 150px;
+	margin: 0 auto;
+	width: 150px;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.link {
+	color: rgb(187, 46, 31);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.card-list {
+	font-size: 20px;
+	margin: 20px 0;
+}
+
+.card-list li {
+	display: flex;
+	align-items: center;
+	margin: 10px;
+}
+
+.card-list svg {
+	margin-right: 10px;
+}
+
+.card-list a {
+	color: inherit;
+	font-weight: 500;
+}
+
+.bg-light {
+	background-color: rgba(0,0,0,0.08);
+	border-radius: 3px;
+}
+
+.repo {
+	margin: 10px 0;
+	padding: 20px;
+	width: 250px;
+}
+
+.repo img {
+	margin-bottom: 8px;
+}
