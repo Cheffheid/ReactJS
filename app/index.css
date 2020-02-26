@@ -137,3 +137,68 @@ li {
 	border-radius: 3px;
 	padding: 40px;
 }
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.player {
+	flex: 1;
+	margin: 0 20px;
+	padding: 10px;
+}
+
+.player-label {
+	font-size: 20px;
+	font-weight: 300;
+	margin: 5px 0;
+}
+
+.player-inputs input {
+	border: none;
+	border-radius: 3px;
+	box-shadow: inset 1px 2px rgba(0,0,0, 0.15);
+	flex: 2;
+	font-size: 16px;
+	padding: 8px;
+}
+
+.player-inputs .input-light {
+	background: rgba(0,0,0,0.02);
+}
+
+.player-inputs button {
+	flex: 1;
+	margin-left: 10px;
+}
+
+.btn {
+	align-items: center;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	display: flex;
+	font-size: 16px;
+	justify-content: center;
+	letter-spacing: 0.25em;
+	max-width: 200px;
+	padding: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.btn-dark {
+	background: #141414;
+	color: #e6e6e6;
+}
+
+.btn-dark:disabled {
+	background: #f2f2f2;
+	color: #c7c7c7;
+}
