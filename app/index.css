@@ -1,0 +1,41 @@
+html, body, #app {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+.flex-center {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.btn-clear {
+	background: transparent;
+	border: none;
+}
+
+.nav-link {
+	color: inherit;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.nav-link.active {
+	color: rgb(187, 41, 37);
+}
