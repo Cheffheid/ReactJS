@@ -104,13 +104,13 @@ li {
 	border-radius: 3px;
 }
 
-.repo {
+.card {
 	margin: 10px 0;
 	padding: 20px;
 	width: 250px;
 }
 
-.repo img {
+.card img {
 	margin-bottom: 8px;
 }
 
@@ -223,4 +223,14 @@ li {
 
 .player-info .link {
 	margin-left: 10px;
+}
+
+.btn-space {
+	margin: 40px auto;
+}
+
+.error {
+	color: #ff1616;
+	font-size: 20px;
+	margin: 50px 0;
 }
