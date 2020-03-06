@@ -22,5 +22,8 @@ module.exports = {
 			inject: 'body'
 		} )
 	],
+	devServer: {
+		historyApiFallback: true
+	},
 	mode: 'production' === process.env.NODE_ENV ? 'production' : 'development'
 };
