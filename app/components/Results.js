@@ -1,7 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import queryString from 'query-string';
 import { battle } from '../utils/api';
 import { FaCompass, FaBriefcase, FaUsers, FaUserFriends, FaCode, FaUser } from 'react-icons/fa';
-import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import Card from './Card';
 import Loading from './Loading';
 import Tooltip from './Tooltip';
@@ -58,7 +60,7 @@ export default class Results extends React.Component {
 	}
 
 	componentDidMount() {
-		const { playerOne, playerTwo } = this.props;
+		const { playerOne, playerTwo } = queryString.parse( this.props.location.search );
 
 		battle( [ playerOne, playerTwo ] )
 			.then( ( players ) => {
@@ -112,12 +114,12 @@ export default class Results extends React.Component {
 						<ProfileList profile={loser.profile} />
 					</Card>
 				</div>
-				<button
-					onClick={this.props.onReset}
+				<Link
+					to='/battle'
 					className='btn btn-dark btn-space'
 				>
 					Reset
-				</button>
+				</Link>
 			</React.Fragment>
 		)
 	}
@@ -125,6 +127,5 @@ export default class Results extends React.Component {
 
 Results.propTypes = {
 	playerOne: PropTypes.string.isRequired,
-	playerTwo: PropTypes.string.isRequired,
-	onReset: PropTypes.func.isRequired
+	playerTwo: PropTypes.string.isRequired
 }
