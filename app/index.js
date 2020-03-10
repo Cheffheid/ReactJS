@@ -9,16 +9,12 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './index.css';
 
 class App extends React.Component {
-	constructor( props ) {
-		super( props );
-
-		this.state = {
-			theme: 'light',
-			toggleTheme: () => {
-				this.setState( ( { theme } ) => ( {
-					theme: 'light' === theme ? 'dark' : 'light'
-				} ) )
-			}
+	state = {
+		theme: 'light',
+		toggleTheme: () => {
+			this.setState( ( { theme } ) => ( {
+				theme: 'light' === theme ? 'dark' : 'light'
+			} ) )
 		}
 	}
 
